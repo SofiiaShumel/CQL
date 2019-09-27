@@ -1,0 +1,5 @@
+DROP KEYSPACE
+IF EXISTS messagekey;
+
+DROP TABLE 
+IF EXISTS "UserMessages";
