@@ -1,5 +1,11 @@
-DROP KEYSPACE
-IF EXISTS messagekey;
+DROP keyspace IF EXISTS "MessageKey";
 
-DROP TABLE 
-IF EXISTS "UserMessages";
+DROP TYPE IF EXISTS "MessageKey"."PersonName";
+
+DROP TABLE IF EXISTS "MessageKey"."UserMessages";
+
+DROP TABLE IF EXISTS "MessageKey"."Messengers";
+
+DROP TABLE IF EXISTS "MessageKey"."Category";
+
+DROP TABLE IF EXISTS "MessageKey"."Users";
