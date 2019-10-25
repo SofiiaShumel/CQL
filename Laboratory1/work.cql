@@ -76,6 +76,18 @@ SELECT JSON * FROM "MessageKey"."UserMessages";
 
 
 
+SELECT people_list, category_population
+FROM "MessageKey"."Category"
+WHERE category_name = 'Sport'
+ALLOW FILTERING; 
+
+SELECT messenger_user_id, username
+FROM "MessageKey"."UserMessages"
+WHERE messenger_id = 'T1'
+ALLOW FILTERING;
+
+
+
 
 UPDATE "MessageKey"."Users"
 SET real_name = {
@@ -115,7 +127,7 @@ WHERE username = 'maria';
 
 
 
-
+// запросы
 SELECT sender, messeges
 FROM "MessageKey"."UserMessages"
 WHERE username = 'mike14'
@@ -125,6 +137,18 @@ SELECT sender, messeges
 FROM "MessageKey"."UserMessages"
 WHERE messenger_id = 'W1' and username = '12gamer21'
 ALLOW FILTERING; 
+
+
+SELECT people_list, category_population
+FROM "MessageKey"."Category"
+WHERE category_name = 'Sport'
+ALLOW FILTERING; 
+
+SELECT messenger_user_id, username
+FROM "MessageKey"."UserMessages"
+WHERE messenger_id = 'T1'
+ALLOW FILTERING;
+
 
 
 
